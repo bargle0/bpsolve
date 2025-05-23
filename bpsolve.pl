@@ -1,3 +1,5 @@
+% Copyright (C) 2025, bargle0
+%
 % Spoiler Warning:
 % This solves a class of puzzles from the Blue Prince video game.
 %
