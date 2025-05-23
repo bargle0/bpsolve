@@ -70,9 +70,9 @@ balance :- f(blue), t(white), t(black).
 balance :- f(blue), t(white), f(black).
 
 % Exactly one box is full
-one_box :- full(blue), \+ full(white), \+ full(black).
-one_box :- \+ full(blue), full(white), \+ full(black).
-one_box :- \+ full(blue), \+ full(white), full(black).
+one_box :- full(blue), empty(white), empty(black).
+one_box :- empty(blue), full(white), empty(black).
+one_box :- empty(blue), empty(white), full(black).
 
 solve(X) :- balance, one_box, full(X).
 
